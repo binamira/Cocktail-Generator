@@ -1,0 +1,87 @@
+.App {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+body {
+  background: rgb(238, 212, 255);
+
+}
+.formContainer {
+  width: 50%;
+  margin-left: 25%;
+  text-align: center;
+  margin-top: 100px;
+
+  /* Adjust the height as needed */
+  /* Set your desired background color */
+}
+
+.formContainer h2 {
+  margin-bottom: 20px; /* Add margin to create space between the title and input */
+}
+
+.cardContainer {
+  flex-basis: 100%; /* Set the width to 100% to take full width */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 70px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.card {
+  flex-basis: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  border-radius: 5%;
+}
+
+/* Mobile View */
+@media (max-width: 767px) {
+  .cardContainer {
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+/* Tablet and Larger View */
+@media (min-width: 768px) {
+  .cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    flex-basis: calc(33.33% - 20px);
+    margin: 10px;
+  }
+}
+
+/* Desktop and Larger View */
+@media (min-width: 1200px) {
+  .cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  .card {
+    flex-basis: calc(33.33% - 40px);
+    margin: 10px 20px;
+  }
+}
